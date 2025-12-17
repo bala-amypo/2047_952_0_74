@@ -1,4 +1,6 @@
 package com.example.demo.service;
-public class StudentService{
-    
+import com.example.demo.entity.Student;
+public interface StudentService{
+    student poststudent(Student st);
+
 }
