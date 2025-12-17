@@ -1,2 +1,9 @@
 package com.example.demo.entity;
-public class Student
+import java.time.LocalDate
+public class Student{
+    private long id;
+    private string name;
+    private string  dept;
+    private LocalDate dob;
+    private float cgpa;
+}
