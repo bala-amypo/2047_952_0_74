@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.StudentController;
 
 
 
-import com.example.demo.entity.Studednt
+import com.example.demo.entity.Studednt;
 
 @RestController
 
