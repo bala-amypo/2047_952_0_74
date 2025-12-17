@@ -7,8 +7,8 @@ public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
-    private string name;
-    private string  dept;
+    private String name;
+    private String  dept;
     private LocalDate dob;
     private float cgpa;
     public long getId() {
