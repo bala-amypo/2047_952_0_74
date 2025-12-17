@@ -6,4 +6,10 @@ public class Student{
     private string  dept;
     private LocalDate dob;
     private float cgpa;
+    public Long getId(){
+        return id;
+    }
+    public void setId(Long id){
+        this
+    }
 }
