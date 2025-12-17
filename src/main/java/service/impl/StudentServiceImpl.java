@@ -9,7 +9,7 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
     @Override
     public Studednt poststudent(Student st){
-        return
+        return stdrepo.save(st);
     }
 
 }
