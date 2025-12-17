@@ -12,8 +12,10 @@ public class StudentServiceImpl implements StudentService{
     StudentRepository stdrepo;
     @Override
     public Student poststudent(Student st){
-        return stdrepo.findALL (st);
+        return stdrepo.save (st);
     @Override
+    public List<Student> getallstudent(){
+        return stdrepo.findALL ();
     }
 
 }
