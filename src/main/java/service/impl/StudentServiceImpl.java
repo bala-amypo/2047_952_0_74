@@ -5,6 +5,6 @@ import com.example.demo.service.StudentService;
 @service
 public class StudentServiceImpl implements StudentService{
     @Override
-    public Studednt poststudent(Student st)
+    public Studednt poststudent(Student st);
 
 }
