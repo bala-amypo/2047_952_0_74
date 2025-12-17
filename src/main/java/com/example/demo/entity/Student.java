@@ -1,5 +1,6 @@
 package com.example.demo.entity;
-import java.time.LocalDate
+import java.time.LocalDate;
+@Entity
 public class Student{
     private long id;
     private string name;
@@ -44,6 +45,7 @@ public class Student{
         this.dob = dob;
     }
     public Student() { 
+
      }
 
 }
