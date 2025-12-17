@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 import org.springframework.web.bind.annotation.*; 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.PostStu
+import org.springframework.beans.factory.annotation.PostStudent;
+import org.springframework.beans.factory.annotation.StudentController;
+
 
 
 import com.example.demo.entity.Studednt
