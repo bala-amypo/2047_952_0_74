@@ -5,12 +5,12 @@ import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
  
-@service
+@Service
 public class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
     @Override
-    public Studednt poststudent(Student st){
+    public Student poststudent(Student st){
         return stdrepo.save(st);
     }
 
