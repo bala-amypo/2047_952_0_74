@@ -7,6 +7,8 @@ import com.example.demo.service.StudentService;
  
 @service
 public class StudentServiceImpl implements StudentService{
+    @Autowired
+    StudentRepository stdrepo;
     @Override
     public Studednt poststudent(Student st){
         return stdrepo.save(st);
