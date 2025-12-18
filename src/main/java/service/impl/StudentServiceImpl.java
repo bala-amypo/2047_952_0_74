@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
-import java.util.List;
+import java.util.*;
  
 @Service
 public class StudentServiceImpl implements StudentService{
@@ -17,5 +17,8 @@ public class StudentServiceImpl implements StudentService{
     public List<Student> getallstudent(){
         return stdrepo.findALL ();
     }
-
+    @Override
+    public Optional<Student>getById(Long id){
+        return stdrepo.findById(id);
+    }
 }
