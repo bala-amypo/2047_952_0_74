@@ -11,28 +11,28 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
-  @Override
-   public Student poststudent(Student st){
+    @Override
+    public Student poststudent(Student st){
        return stdrepo.save(st);
-   } 
-   @Override
-   public List<Student> getAllStudent(){
-    return stdrepo.findAll();
-   }
-   @Override
-   public Optional<Student> getById(Long id){
-    return stdrepo.findById(id);
-   }
-   @Override
-   public String updateData(Long id,Student st){
-    boolean status=stdrepo.existsById(id);
-    if(status){
-        st.setId(id);
-        stdrepo.save(st);
-        return "Student updates Successfully";
+    } 
+    @Override
+    public List<Student> getAllStudent(){
+        return stdrepo.findAll();
     }
-    else{
-        return "Student with Id"+id+" not found";
-    }
-}
+    @Override
+    public Optional<Student> getById(Long id){
+        return stdrepo.findById(id);
+    }
+    @Override
+    public String updateData(Long id,Student st){
+        boolean status=stdrepo.existsById(id);
+        if(status){
+            st.setId(id);
+            stdrepo.save(st);
+            return "Student updates Successfully";
+        }
+        else{
+            return "Student with Id"+id+" not found";
+        }
+    }
 }
