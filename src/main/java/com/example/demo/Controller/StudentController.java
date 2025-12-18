@@ -15,9 +15,11 @@ public class StudentController{
     public Student addStudent(@RequestBody Student st){
         return stdser.poststudent(st);
     }
-    @GetMapping("getall")
+    @GetMapping("/getall")
     public List<Student> getallstudent(){
-        return stdser.getallstudent();
+        return stdser.getallstudents();
     }
+    @GetMapping("getById(id)")
+    public 
 
 }
