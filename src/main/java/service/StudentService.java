@@ -4,5 +4,5 @@ import java.util.*;
 public interface StudentService{
     Student poststudent(Student st);
     List<Student> getallstudent();
-    OPtional<Student>getById(Loing id);
+    Optional<Student>getById(Loing id);
 }
