@@ -35,4 +35,13 @@ public class StudentServiceImpl implements StudentService{
             return "Student with Id"+id+" not found";
         }
     }
+    @Override
+    public string deleteDelete(Long id){
+        boolean status=stdrepo.existsById(id);
+        if(status){
+           stdrepo.deleteById(id);
+           return "Student Deleted Successfully";
+    }
+    else{
+    return "Student with "+id+" not found
 }
